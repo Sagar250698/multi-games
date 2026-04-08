@@ -10,7 +10,7 @@ export interface IRoom extends Document {
   roomId: string;
   players: IPlayer[];
   board: (string | null)[];
-  currentTurn: string; // socketId of the player whose turn it is
+  currentTurn: string; 
   status: 'waiting' | 'playing' | 'finished';
   winner: string | null; // socketId or 'draw'
 }
